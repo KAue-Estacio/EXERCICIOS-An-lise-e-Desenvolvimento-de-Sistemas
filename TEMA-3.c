@@ -13,13 +13,14 @@ void torre (int casas){
     } }
 
     //loop BISPO
-    void bispo(int casas){
+    void recursive  (int casas){
     if (casas > 0) {
-        printf(" *** BISPO ***\n");
-        printf("CIMA,DIREITA\n");
-        printf("\n");
-        bispo(casas - 1);
-    } }
+            printf(" *** BISPO ***\n");
+            printf("CIMA,DIREITA\n");
+             printf("Vertical,Horinzontal\n");
+            printf("\n");
+            recursive(casas - 1); // chamada recursiva
+        }}
 
     //loop RAINHA
     void rainha (int casas){   
@@ -33,12 +34,11 @@ void torre (int casas){
 int main(){
    
      torre (5);
-     bispo (5) ;
+     recursive (5) ; //bispo
      rainha (8);
    
 for (int i = 0; i < 2; i++ )
 {   if (i==0) continue;
-    //if(i<3)break;
     printf(" *** CAVALO ***\n");
     printf("CIMA\n");
     printf("CIMA\n");
