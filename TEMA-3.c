@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// Exercicio 1/NOVATO - Movimentação de Peças de Xadrez
+// Exercicio Movimentação de Peças de Xadrez
 
 
 //loop TORRE
